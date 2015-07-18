@@ -3,8 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Quick Shopping</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 </head>
 <body>
-	
+	<div id="container">
+		<section class="header">
+			<h1 class="main-title">jQuery Shopping List</h1>
+			<h2 class="sub-title">Enter information and press submit or the enter key to add the item to your list</h2>
+		</section>
+		<section class="main">
+			<section class="list-add">
+				<form class="list-input">
+					Name: <input type="text" name="item-name" placeholder="Item name here">
+					Qty: <input type="text" name="item-qty" placeholder="Quantity here">
+					<input type="submit" value="Submit">
+				</form>
+			</section>
+			<section class="list">
+				<ul class="full-list">
+					<li class="item">
+						<h1 class="item-name">Pineapple</h1>
+						<h1 class="item-qty">2 Cans</h1>
+						<button class="completed">-</button>
+						<button class="delete">X</button>
+					</li>
+					<li class="item">
+						<h1 class="item-name">Brownberry Multigrain Bread</h1>
+						<h1 class="item-qty">1 Loaf</h1>
+						<button class="completed">-</button>
+						<button class="delete">X</button>
+					</li>
+				</ul>
+			</section>
+		</section>
+		<section class="footer">
+		</section>
+	</div>
 </body>
 </html>
