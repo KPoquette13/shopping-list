@@ -1,0 +1,63 @@
+body {
+	background-color:#DDDDDD;
+}
+
+#container {
+	background-color: #C7C7C7;
+	width:60em;
+	margin: 4em auto;
+	border-radius: 10px;
+}
+
+.header {
+	text-align:center;
+	padding: 1em 2em;
+}
+
+.main {
+	width:45em;
+	padding: 2em 2em 4em;
+	margin: 0 auto;
+}
+
+.list-add{
+	width:35em;
+	margin: 0 auto;
+}
+
+.full-list {
+	list-style:none;
+	-webkit-padding-start:0px;
+}
+
+.item {
+	background-color:#626262;
+	border-radius: 1em;
+	height:1.6em;
+	padding:.2em .5em;
+	margin: .2em 0;
+}
+
+.item-name,
+.item-qty {
+	float:left;
+	margin: .28em .5em;
+	font-weight:bold;
+}
+
+.item-name {
+	width:26em;
+}
+
+.item-qty {
+	width:10em;
+}
+
+.list button {
+	float: right;
+	border:none;
+	border-radius: 1em;
+	height:1.5em;
+	width: 1.5em;
+	margin: .05em .1em;
+}
