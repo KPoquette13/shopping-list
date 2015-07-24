@@ -18,24 +18,26 @@
 		<section class="main">
 			<section class="list-add">
 				<form class="list-input">
-					Name: <input type="text" name="item-name" placeholder="Item name here">
-					Qty: <input type="text" name="item-qty" placeholder="Quantity here">
-					<input type="submit" value="Submit">
+					Name: <input id="item-name" type="text" name="item-name" placeholder="Item name">
+					Qty: <input id="item-qty" type="text" name="item-qty" placeholder="Quantity">
+					<input id ="submit-button" type="submit" value="Submit">
 				</form>
 			</section>
 			<section class="list">
 				<ul class="full-list">
-					<li class="item">
+					<li class="item item-open">
 						<span class="item-name">Pineapple</span>
 						<span class="item-qty">2 Cans</span>
-						<button class="completed">-</button>
-						<button class="delete">X</button>
+						<button class="delete"><i class="fa fa-close"></i></button>
+						<button class="completed"><i class="fa fa-minus-circle"></i></button>
+						<hr class= "crossed-out inactive" />
 					</li>
-					<li class="item">
+					<li class="item item-completed">
 						<span class="item-name">Brownberry Multigrain Bread</span>
 						<span class="item-qty">1 Loaf</span>
-						<button class="completed">-</button>
-						<button class="delete">X</button>
+						<button class="delete"><i class="fa fa-close"></i></button>
+						<button class="completed"><i class="fa fa-circle-o"></i></button>
+						<hr class= "crossed-out" />
 					</li>
 				</ul>
 			</section>

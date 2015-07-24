@@ -12,6 +12,12 @@ body {
 .header {
 	text-align:center;
 	padding: 1em 2em;
+	margin: 0 auto;
+	width:40em;
+}
+
+.sub-title{
+	font-weight:normal;
 }
 
 .main {
@@ -21,7 +27,9 @@ body {
 }
 
 .list-add{
-	width:35em;
+	width:40em;
+	text-align: center;
+	font-weight:bold;
 	margin: 0 auto;
 }
 
@@ -31,12 +39,22 @@ body {
 }
 
 .item {
-	background-color:#626262;
+
 	border-radius: 1em;
 	height:1.6em;
 	padding:.2em .5em;
 	margin: .2em 0;
 }
+
+.item-open{
+	background-color:#848484;
+}
+
+.item-completed {
+	background-color:#4C4C4C;
+}
+
+/*classes are for items in the list */
 
 .item-name,
 .item-qty {
@@ -50,14 +68,59 @@ body {
 }
 
 .item-qty {
-	width:10em;
+	width:8em;
+}
+
+/* ID's are for input fields */
+
+#item-name {
+	width:15em;
+}
+
+#item-qty {
+	width:8em;
 }
 
 .list button {
 	float: right;
 	border:none;
-	border-radius: 1em;
-	height:1.5em;
-	width: 1.5em;
-	margin: .05em .1em;
+	border-radius: 1.1em;
+	height:1.6em;
+	width: 1.6em;
+	margin: 0 .2em;
+	text-align: center;
+}
+
+#submit-button {
+	border:none;
+	border-radius:.8em;
+	background-color: #848484;
+	width:5em;
+	height:1.4em;
+	font-weight:normal;
+}
+
+#item-qty,
+#item-name {
+	border:none;
+	border-radius:.8em;
+	margin: 0;
+	text-align:center;
+}
+
+.delete {
+	background-color:#F44242;
+}
+
+.crossed-out {
+	position:relative;
+	left:-75px;
+	top: -15px;
+	width:550px;
+	border-color:#000000;
+	z-index:10;
+}
+
+.inactive{
+	display:none;
 }
